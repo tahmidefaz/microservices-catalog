@@ -1,26 +1,40 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+.pf-c-title{
+  color: rgb(177, 18, 45);
+  font-family: 'Times New Roman', Times, serif;
+  font-style: initial;
+  font-family: serif;
+}
+.header-for-title{
+  padding-left: 0.5cm;
+  padding-bottom: 1cm;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.pf-m-10-col{
+  background-color: beige;
+  padding-bottom: 20cm;
+  padding-right: 10cm;
 }
 
-* {
-  box-sizing: border-box;
+.pf-m-12-col{
+  background-color: black;
+  padding-top: 1cm;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.pf-m-2-col{
+  background-color: rgb(240, 237, 232);
+  padding-right: 15cm;
+}
+
+#input-box{
+  padding-left: 0.1cm;
+  padding-top: 0.05cm;
+  width: 10cm;
+  background-color: rgb(247, 245, 241);
+}
+
+#text{
+  padding-left: 10cm;
+  padding-top: 10cm;
+  color: rgb(89, 60, 116);
 }
