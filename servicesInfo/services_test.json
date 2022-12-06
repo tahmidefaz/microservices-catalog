@@ -1,0 +1,15 @@
+{
+    "orgs": [
+        {
+            "name": ""
+        }
+    ],
+    "services": [
+        {
+            "name": "",
+            "org": "",
+            "description": "",
+            "onboarding_doc": ""
+        }
+    ]
+}
