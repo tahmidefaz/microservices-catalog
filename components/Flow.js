@@ -10,7 +10,7 @@ import ServiceNode from './ServiceNode';
 // const edges = [{ id: '1-2', source: '1', target: '2', label: 'something'}];
 
 
-function Flow() {
+function Flow({ setServiceModalOpen, setServiceModalData}) {
     const [nodes, setNodes] = useState([])
     const [edges, setEdges] = useState([])
     const [level, setLevel] = useState(1)

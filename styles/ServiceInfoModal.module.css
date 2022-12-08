@@ -1,0 +1,9 @@
+.modalBackground {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(33,33,33,0.5);
+}
