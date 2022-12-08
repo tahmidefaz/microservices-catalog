@@ -29,7 +29,7 @@
 #input-box{
   padding-left: 0.1cm;
   padding-top: 0.05cm;
-  width: 10cm;
+  width: 100%;
   background-color: rgb(247, 245, 241);
 }
 
