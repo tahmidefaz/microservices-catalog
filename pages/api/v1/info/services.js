@@ -3,7 +3,6 @@ import { promises as fs } from 'fs';
 
 export default async function Orgs(req, res) {
     const { org, service } = req.query
-    console.log("org, service", org, service)
 
     const indexLoc = path.join(process.cwd(), 'servicesInfo') + '/searchIndex.json'
     const fileContent = await fs.readFile(indexLoc, 'utf-8')
