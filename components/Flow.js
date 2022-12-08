@@ -24,6 +24,11 @@ function Flow({ setServiceModalOpen, setServiceModalData}) {
         setOrgServToLoad(orgName)
     }
 
+    const serviceNodeHandler = (serviceInfo) => {
+        setServiceModalData(serviceInfo)
+        setServiceModalOpen(true)
+    }
+
 
     useEffect(() => {
         orgServToLoad !== '' &&
@@ -41,7 +46,7 @@ function Flow({ setServiceModalOpen, setServiceModalData}) {
                 const orgName = orgServToLoad
 
                 const servicesNodeArr = orgServices.map((service, i) => {
-                    return {id: `${orgName}_${service.name}`, type: 'serviceNode', position: {x: 50+i*200, y: 50*3*level}, data: { name: service.name, orgName: service.org }}
+                    return {id: `${orgName}_${service.name}`, type: 'serviceNode', position: {x: 50+i*200, y: 50*3*level}, data: { serviceInfo: service, handler: serviceNodeHandler }}
                 })
 
                 const servicesEdges = orgServices.map((service, i) => {

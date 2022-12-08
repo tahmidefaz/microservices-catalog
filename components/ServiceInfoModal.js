@@ -1,3 +1,4 @@
+import Link from 'next/link'
 
 import styles from '../styles/ServiceInfoModal.module.css'
 
@@ -7,29 +8,28 @@ export default function ServieInfoModal({ isOpen, setIsOpen, serviceInfoData }) 
         <>
             { isOpen && <div className={styles.modalBackground}>
                 <div
-                    class="pf-c-modal-box pf-m-sm"
+                    className="pf-c-modal-box pf-m-sm"
                     role="dialog"
                     aria-modal="true"
                     aria-labelledby="modal-sm-title"
                     aria-describedby="modal-sm-description"
                 >
                         <button
-                            class="pf-c-button pf-m-plain"
+                            className="pf-c-button pf-m-plain"
                             type="button"
                             aria-label="Close dialog"
+                            onClick={() => setIsOpen(false)}
                         >
-                            <i class="fas fa-times" aria-hidden="true"></i>
+                            <i className="fas fa-times" aria-hidden="true"></i>
                         </button>
-                        <header class="pf-c-modal-box__header">
-                            <h1 class="pf-c-modal-box__title" id="modal-sm-title">Modal title</h1>
+                        <header className="pf-c-modal-box__header">
+                            <h1 className="pf-c-modal-box__title" id="modal-sm-title">{serviceInfoData.name}</h1>
+                            <h4 className="pf_c-modal__title" id="modal-sm-subtitle">{serviceInfoData.org}</h4>
                         </header>
-                        <div class="pf-c-modal-box__body" id="modal-sm-description">
-                            Static text describing modal purpose. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.
+                        <div className="pf-c-modal-box__body" id="modal-sm-description">
+                            {serviceInfoData.description}
                         </div>
-                        <footer class="pf-c-modal-box__footer">Modal footer</footer>
+                        <footer className="pf-c-modal-box__footer"><Link href={serviceInfoData.onboarding_doc} target="_blank">Onboarding Doc</Link></footer>
                     </div>
                 </div>
             }
