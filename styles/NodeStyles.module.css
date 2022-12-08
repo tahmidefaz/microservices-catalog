@@ -1,0 +1,40 @@
+
+.orgNode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 60px;
+    width: 150px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background: #d63031;
+    color: white;
+    cursor: pointer;
+}
+
+.serviceNode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 60px;
+    width: 150px;
+    border: 2px solid #d63031;
+    border-radius: 5px;
+    background: white;
+    color: #000000;
+    cursor: pointer;
+}
+
+.subHeading {
+    color: #d9d9d9;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.serviceNode .subHeading {
+    color: #9d9d9d;
+}
