@@ -1,7 +1,7 @@
 
+import styles from '../styles/Home.module.css'
 
 export default function ServiceInfoCard({serviceInfo, setModalOpen, setModalData}) {
-    
     const onClickHandler = () => {
         setModalData(serviceInfo)
         setModalOpen(true)
@@ -9,9 +9,9 @@ export default function ServiceInfoCard({serviceInfo, setModalOpen, setModalData
 
     return (
         <>
-            <div class="pf-c-card" onClick={() => onClickHandler()} style={{cursor: 'pointer'}}>
-                <div class="pf-c-card__title">{serviceInfo.name}</div>
-                <div class="pf-c-card__body">{serviceInfo.org}</div>
+            <div className="pf-c-card serviceInfoCard" onClick={() => onClickHandler()}>
+                <div className="pf-c-card__title">{serviceInfo.name}</div>
+                <div className="pf-c-card__body">{serviceInfo.org}</div>
             </div>
         </>
     )

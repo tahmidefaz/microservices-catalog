@@ -9,3 +9,15 @@
   padding-left: 0.5cm;
   padding-bottom: 1cm;
 }
+
+.serviceInfoCard {
+  cursor: pointer;
+}
+
+.serviceInfoCard:hover {
+  background-color: #F0f0f0;
+}
+
+.serviceInfoCard:active {
+  background-color: #D2D2D2;
+}
