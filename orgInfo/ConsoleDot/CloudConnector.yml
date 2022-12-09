@@ -1,0 +1,7 @@
+---
+service_name: Cloud Connector
+description: |
+  The Cloud Connector service is designed to receive messages from
+  internal clients and route the messages to the target machine which
+  runs in the customer's environment.
+onboarding_doc: https://github.com/RedHatInsights/cloud-connector/blob/2b7501be67e1314e9434d6262e0672c081240d5b/README.md

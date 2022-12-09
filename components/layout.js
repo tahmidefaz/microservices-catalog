@@ -25,7 +25,9 @@ export default function Layout() {
             <div className={styles.searchInput}>
               <Search/>
             </div>
-            <div className={styles.searchResults}>Search Result</div>
+            <div className={styles.searchResults}>
+              Search Results
+            </div>
           </div>
         </div>
         <ServiceInfoModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} serviceInfoData={serviceModalData} />

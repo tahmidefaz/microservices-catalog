@@ -1,0 +1,7 @@
+---
+service_name: Cool Taco
+description: |
+  The hottest microservice on the block.
+  With just one simple API call, you'll be transported to flavor town and treated to the most delicious tacos imaginable.
+  Why settle for boring old burritos when you can have a Cool Taco? 🌮
+onboarding_doc: http://example.com

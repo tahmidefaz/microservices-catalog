@@ -1,6 +1,0 @@
----
-service_name: Random Service
-description: |
-  some more random description
-  here
-onboarding_doc: http://example.com

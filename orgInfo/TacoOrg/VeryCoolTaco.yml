@@ -1,0 +1,7 @@
+---
+service_name: Very Cool Taco
+description: |
+  Spice up your life with the coolest new microservice aroud.
+  One API call will deliver very cool tacos straight to your door.
+  Why settle for mediocre tacos when you can have very cool tacos?
+onboarding_doc: http://example.com
