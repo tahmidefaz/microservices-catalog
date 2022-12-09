@@ -50,7 +50,6 @@ function Flow({ setServiceModalOpen, setServiceModalData}) {
                 })
 
                 const servicesEdges = orgServices.map((service, i) => {
-                    console.log("org...", `${orgName}_${service.name}_edge`)
                     return { id: `${orgName}_${service.name}_edge`, source: orgName, target: `${orgName}_${service.name}`, sourceHandle: "a"}
                 })
 
