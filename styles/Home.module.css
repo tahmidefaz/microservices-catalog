@@ -25,6 +25,7 @@
 
 .sidebar {
     flex: 2;
+    overflow-y: scroll;
 }
 
 .searchInput {
@@ -32,6 +33,5 @@
 }
 
 .searchResults {
-    /* css for the search results */
-    padding-top: 20px;
+    /* height: 100%; */
 }

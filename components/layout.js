@@ -22,11 +22,8 @@ export default function Layout() {
             <Flow setServiceModalOpen={setIsModalOpen} setServiceModalData={setServiceModalData}/>
           </div>
           <div className={styles.sidebar}>
-            <div className={styles.searchInput}>
-              <Search/>
-            </div>
-            <div className={styles.searchResults}>
-              Search Results
+            <div>
+              <Search setModalOpen={setIsModalOpen} setModalData={setServiceModalData}/>
             </div>
           </div>
         </div>
